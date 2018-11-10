@@ -1,0 +1,24 @@
+<view hidden="{{stageHidden}}" class="stage">
+  <view class="score">
+    <view>您已经获胜
+      <view class="win-num" style="{{winNumAnimation}}">{{winNum}}</view>次！
+    </view>
+  </view>
+  <view class="choice">
+    <image bindtap="play" data-val='1' src="../images/111.jpg"></image>
+    <image bindtap="play" data-val='2' src="../images/222.jpg"></image>
+    <image bindtap="play" data-val='3' src="../images/333.jpg"></image>
+  </view>
+  <view style="{{sayWordsAnimation}}" class="say-words">{{sayWords}}</view>
+  <view class="result">
+        <view class="choice">
+            <image src="{{playerImg}}"></image>
+            <view class="winOrlose">{{winOrlose}}</view>
+            <image src="{{pcImg}}"></image>
+        </view>
+    </view>
+    <view class="score ">
+        <view>连续获胜<view style="{{winNumAnimation}}" class="win-num">{{successionWinNum}}</view>次！</view>
+    </view>
+    
+</view>

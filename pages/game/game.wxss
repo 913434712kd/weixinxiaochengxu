@@ -1,0 +1,8 @@
+Page{background-color: rgba(226, 231, 241, 0.68);}
+.score{color: #1c3648;text-align: center;margin:50rpx;} 
+.win-num{display:inline-block}
+.choice{display:flex;justify-content: space-between;}
+.choice image{height:200rpx;width:200rpx;}
+.say-words{text-align: center;margin:120rpx;font-size: 40rpx;color: #576b95;text-shadow: 1px 6px 10px #576b95;}
+.winOrlose{line-height: 200rpx;font-size: 50rpx;color: #b963e4}
+.win-num{color:#e64340;font-size: 54rpx;transition: all .2s ease-out;margin: 0 8rpx}

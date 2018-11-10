@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">称号说明：（连击次数）</text>
+    <text class="user-motto">打的不错（1~3）</text>
+    <text class="user-motto">勇冠全场（4~7）</text>
+    <text class="user-motto">超越神了（>7）</text>
+  </view>
+  <view>
+  <button type="primary" size="mini" bindtap="default" class="btn"> 开始 </button>
+  </view>
+</view>
